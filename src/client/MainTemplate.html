@@ -1,0 +1,17 @@
+<template name="MainTemplate">
+    <p>
+        <input type="text" placeholder="Say your name..." id="name">
+        <input type="button" value="Hey!" id="heybutton">
+    </p>
+    <p>
+        Clicks count: {{ clicksCount }}
+    </p>
+
+    <p>
+        <ul>
+            {{#each clicks }}
+                <li> {{ name }} at <a href="{{pathFor 'SingleClick' clickId=_id}}">{{ time }}</a></li>
+            {{/each}}
+        </ul>
+    </p>
+</template>
