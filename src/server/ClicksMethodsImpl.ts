@@ -12,7 +12,7 @@ module sampleapp.model {
             ClicksCollection.insert({
                 name: args.name,
                 time: new Date()
-            })
+            });
         }
     }
     MeteorMethod.register(SaveClick, new SaveClickImpl());

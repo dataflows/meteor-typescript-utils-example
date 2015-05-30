@@ -10,5 +10,4 @@ module sampleapp.router {
 
     export interface ISingleClickRouteParams { clickId: string; }
     Router.route("SingleClick", { path: "/click/:clickId", controller: "SingleClickController" });
-    
 }
